@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --content-spacing: 1em;
+    --content-width: 80%;
+
+    --background-color: hsl(225, 100%, 94%);
+    --background-color-light-blue: hsl(225, 100%, 98%);
+    --button-color-blue: hsl(245, 75%, 52%);
+    --text-color-gray: hsl(224, 23%, 55%);
+    --text-color-black: hsl(223, 47%, 23%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+button {
+    all: unset;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    padding: 5em 1em;
+}
+
+.heroImage {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 90%;
+}
+
+.heading {
+    font-weight: 900;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--content-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.planInfo {
+    padding: 0.75em 0.5em;
+    display: flex;
+    align-items: center;
+    width: var(--content-width);
+    margin: 0 auto; 
+    background-color: var(--background-color-light-blue);
+    border-radius: 10px;
+    margin-bottom: var(--content-spacing);
+}
+
+.planPrice {
+    margin-left: var(--content-spacing);
+    font-weight: 900;
+}
+
+.price {
+    font-weight: normal;
+}
+
+.changePlan {
+    color: var(--button-color-blue);
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.changePlan:hover {
+    opacity: 0.8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: var(--content-width);
+    margin: 0 auto;
+}
+
+.buttons button {
+    margin-bottom: var(--content-spacing);
+    text-align: center;
+    font-weight: bold;
+    padding: var(--content-spacing) 0;
+    border-radius: 10px;
+}
+
+.proceedButton {
+    background-color: var(--button-color-blue);
+    color: white;
+}
+
+.proceedButton:hover {
+    opacity: 0.8;
+}
+
+.cancelButton:hover {
+    color: var(--text-color-black);
+    font-weight: 900;
+}
+
+.grayColor {
+    color: var(--text-color-gray);
+}
+
+.blackColor {
+    color: var(--text-color-black);
+}
